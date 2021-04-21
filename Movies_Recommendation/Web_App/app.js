@@ -13,7 +13,7 @@ const makeImage = (shows) => {
     for(let result of shows){
         if(result.show.image){
             const img = document.createElement('IMG');
-            img.src = result.data[0].show.image.medium;
+            img.src = result.show.image.medium;
             document.body.append(img);
         }
 
